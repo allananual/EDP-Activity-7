@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportGeneratorInventory));
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DownloadButton = new System.Windows.Forms.PictureBox();
+            this.ExportBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.About_label = new System.Windows.Forms.Label();
             this.Accounts_label = new System.Windows.Forms.Label();
@@ -44,9 +46,13 @@
             this.label12 = new System.Windows.Forms.Label();
             this.LogOutButton = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.sales_box = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.sales_label = new System.Windows.Forms.Label();
             this.InventoryGridView = new System.Windows.Forms.DataGridView();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label4 = new System.Windows.Forms.Label();
+            this.orders_box = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.orders_label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.ExitBtn = new System.Windows.Forms.PictureBox();
@@ -56,25 +62,19 @@
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.guna2ContextMenuStrip2 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.orders_label = new System.Windows.Forms.Label();
-            this.orders_box = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.sales_label = new System.Windows.Forms.Label();
-            this.sales_box = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.ExportBtn = new System.Windows.Forms.Button();
-            this.DownloadButton = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DownloadButton)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutButton)).BeginInit();
+            this.sales_box.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InventoryGridView)).BeginInit();
             this.guna2ShadowPanel3.SuspendLayout();
+            this.orders_box.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.windows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
-            this.orders_box.SuspendLayout();
-            this.sales_box.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DownloadButton)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ImageButton3
@@ -108,6 +108,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(698, 390);
             this.panel1.TabIndex = 8;
+            // 
+            // DownloadButton
+            // 
+            this.DownloadButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DownloadButton.Image = ((System.Drawing.Image)(resources.GetObject("DownloadButton.Image")));
+            this.DownloadButton.Location = new System.Drawing.Point(560, 67);
+            this.DownloadButton.Margin = new System.Windows.Forms.Padding(2);
+            this.DownloadButton.Name = "DownloadButton";
+            this.DownloadButton.Size = new System.Drawing.Size(22, 20);
+            this.DownloadButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DownloadButton.TabIndex = 72;
+            this.DownloadButton.TabStop = false;
+            this.DownloadButton.Click += new System.EventHandler(this.DownloadButton_Click_1);
+            // 
+            // ExportBtn
+            // 
+            this.ExportBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.ExportBtn.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExportBtn.ForeColor = System.Drawing.Color.White;
+            this.ExportBtn.Location = new System.Drawing.Point(587, 64);
+            this.ExportBtn.Name = "ExportBtn";
+            this.ExportBtn.Size = new System.Drawing.Size(69, 24);
+            this.ExportBtn.TabIndex = 71;
+            this.ExportBtn.Text = "EXPORT";
+            this.ExportBtn.UseVisualStyleBackColor = false;
+            this.ExportBtn.Click += new System.EventHandler(this.ExportBtn_Click_1);
             // 
             // panel2
             // 
@@ -280,6 +306,37 @@
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
+            // sales_box
+            // 
+            this.sales_box.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.sales_box.BackColor = System.Drawing.Color.Transparent;
+            this.sales_box.Controls.Add(this.sales_label);
+            this.sales_box.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sales_box.FillColor = System.Drawing.Color.White;
+            this.sales_box.Location = new System.Drawing.Point(339, 67);
+            this.sales_box.Margin = new System.Windows.Forms.Padding(2);
+            this.sales_box.Name = "sales_box";
+            this.sales_box.Radius = 5;
+            this.sales_box.ShadowColor = System.Drawing.Color.Black;
+            this.sales_box.ShadowDepth = 50;
+            this.sales_box.ShadowShift = 1;
+            this.sales_box.Size = new System.Drawing.Size(69, 20);
+            this.sales_box.TabIndex = 70;
+            this.sales_box.Paint += new System.Windows.Forms.PaintEventHandler(this.sales_box_Paint);
+            // 
+            // sales_label
+            // 
+            this.sales_label.AutoSize = true;
+            this.sales_label.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sales_label.ForeColor = System.Drawing.Color.Black;
+            this.sales_label.Location = new System.Drawing.Point(17, 1);
+            this.sales_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.sales_label.Name = "sales_label";
+            this.sales_label.Size = new System.Drawing.Size(38, 19);
+            this.sales_label.TabIndex = 0;
+            this.sales_label.Text = "Sales";
+            this.sales_label.Click += new System.EventHandler(this.sales_label_Click);
+            // 
             // InventoryGridView
             // 
             this.InventoryGridView.BackgroundColor = System.Drawing.Color.White;
@@ -289,7 +346,7 @@
             this.InventoryGridView.Location = new System.Drawing.Point(174, 102);
             this.InventoryGridView.Name = "InventoryGridView";
             this.InventoryGridView.RowHeadersWidth = 51;
-            this.InventoryGridView.Size = new System.Drawing.Size(484, 266);
+            this.InventoryGridView.Size = new System.Drawing.Size(482, 266);
             this.InventoryGridView.TabIndex = 62;
             // 
             // guna2ShadowPanel3
@@ -318,6 +375,35 @@
             this.label4.Size = new System.Drawing.Size(60, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Inventory";
+            // 
+            // orders_box
+            // 
+            this.orders_box.BackColor = System.Drawing.Color.Transparent;
+            this.orders_box.Controls.Add(this.orders_label);
+            this.orders_box.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.orders_box.FillColor = System.Drawing.Color.White;
+            this.orders_box.Location = new System.Drawing.Point(262, 67);
+            this.orders_box.Margin = new System.Windows.Forms.Padding(2);
+            this.orders_box.Name = "orders_box";
+            this.orders_box.Radius = 5;
+            this.orders_box.ShadowColor = System.Drawing.Color.Black;
+            this.orders_box.ShadowDepth = 50;
+            this.orders_box.ShadowShift = 1;
+            this.orders_box.Size = new System.Drawing.Size(69, 20);
+            this.orders_box.TabIndex = 15;
+            this.orders_box.Paint += new System.Windows.Forms.PaintEventHandler(this.orders_box_Paint);
+            // 
+            // orders_label
+            // 
+            this.orders_label.AutoSize = true;
+            this.orders_label.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orders_label.Location = new System.Drawing.Point(12, 2);
+            this.orders_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.orders_label.Name = "orders_label";
+            this.orders_label.Size = new System.Drawing.Size(46, 19);
+            this.orders_label.TabIndex = 0;
+            this.orders_label.Text = "Orders";
+            this.orders_label.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -417,92 +503,6 @@
             this.guna2ContextMenuStrip2.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ContextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
-            // orders_label
-            // 
-            this.orders_label.AutoSize = true;
-            this.orders_label.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orders_label.Location = new System.Drawing.Point(12, 2);
-            this.orders_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.orders_label.Name = "orders_label";
-            this.orders_label.Size = new System.Drawing.Size(46, 19);
-            this.orders_label.TabIndex = 0;
-            this.orders_label.Text = "Orders";
-            this.orders_label.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // orders_box
-            // 
-            this.orders_box.BackColor = System.Drawing.Color.Transparent;
-            this.orders_box.Controls.Add(this.orders_label);
-            this.orders_box.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.orders_box.FillColor = System.Drawing.Color.White;
-            this.orders_box.Location = new System.Drawing.Point(262, 67);
-            this.orders_box.Margin = new System.Windows.Forms.Padding(2);
-            this.orders_box.Name = "orders_box";
-            this.orders_box.Radius = 5;
-            this.orders_box.ShadowColor = System.Drawing.Color.Black;
-            this.orders_box.ShadowDepth = 50;
-            this.orders_box.ShadowShift = 1;
-            this.orders_box.Size = new System.Drawing.Size(69, 20);
-            this.orders_box.TabIndex = 15;
-            this.orders_box.Paint += new System.Windows.Forms.PaintEventHandler(this.orders_box_Paint);
-            // 
-            // sales_label
-            // 
-            this.sales_label.AutoSize = true;
-            this.sales_label.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sales_label.ForeColor = System.Drawing.Color.Black;
-            this.sales_label.Location = new System.Drawing.Point(17, 1);
-            this.sales_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.sales_label.Name = "sales_label";
-            this.sales_label.Size = new System.Drawing.Size(38, 19);
-            this.sales_label.TabIndex = 0;
-            this.sales_label.Text = "Sales";
-            this.sales_label.Click += new System.EventHandler(this.sales_label_Click);
-            // 
-            // sales_box
-            // 
-            this.sales_box.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.sales_box.BackColor = System.Drawing.Color.Transparent;
-            this.sales_box.Controls.Add(this.sales_label);
-            this.sales_box.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sales_box.FillColor = System.Drawing.Color.White;
-            this.sales_box.Location = new System.Drawing.Point(339, 67);
-            this.sales_box.Margin = new System.Windows.Forms.Padding(2);
-            this.sales_box.Name = "sales_box";
-            this.sales_box.Radius = 5;
-            this.sales_box.ShadowColor = System.Drawing.Color.Black;
-            this.sales_box.ShadowDepth = 50;
-            this.sales_box.ShadowShift = 1;
-            this.sales_box.Size = new System.Drawing.Size(69, 20);
-            this.sales_box.TabIndex = 70;
-            this.sales_box.Paint += new System.Windows.Forms.PaintEventHandler(this.sales_box_Paint);
-            // 
-            // ExportBtn
-            // 
-            this.ExportBtn.BackColor = System.Drawing.Color.IndianRed;
-            this.ExportBtn.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExportBtn.ForeColor = System.Drawing.Color.White;
-            this.ExportBtn.Location = new System.Drawing.Point(587, 64);
-            this.ExportBtn.Name = "ExportBtn";
-            this.ExportBtn.Size = new System.Drawing.Size(69, 24);
-            this.ExportBtn.TabIndex = 71;
-            this.ExportBtn.Text = "EXPORT";
-            this.ExportBtn.UseVisualStyleBackColor = false;
-            this.ExportBtn.Click += new System.EventHandler(this.ExportBtn_Click_1);
-            // 
-            // DownloadButton
-            // 
-            this.DownloadButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DownloadButton.Image = ((System.Drawing.Image)(resources.GetObject("DownloadButton.Image")));
-            this.DownloadButton.Location = new System.Drawing.Point(560, 67);
-            this.DownloadButton.Margin = new System.Windows.Forms.Padding(2);
-            this.DownloadButton.Name = "DownloadButton";
-            this.DownloadButton.Size = new System.Drawing.Size(22, 20);
-            this.DownloadButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.DownloadButton.TabIndex = 72;
-            this.DownloadButton.TabStop = false;
-            this.DownloadButton.Click += new System.EventHandler(this.DownloadButton_Click_1);
-            // 
             // ReportGeneratorInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -515,22 +515,22 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DownloadButton)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutButton)).EndInit();
+            this.sales_box.ResumeLayout(false);
+            this.sales_box.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InventoryGridView)).EndInit();
             this.guna2ShadowPanel3.ResumeLayout(false);
             this.guna2ShadowPanel3.PerformLayout();
+            this.orders_box.ResumeLayout(false);
+            this.orders_box.PerformLayout();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.windows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
-            this.orders_box.ResumeLayout(false);
-            this.orders_box.PerformLayout();
-            this.sales_box.ResumeLayout(false);
-            this.sales_box.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DownloadButton)).EndInit();
             this.ResumeLayout(false);
 
         }
