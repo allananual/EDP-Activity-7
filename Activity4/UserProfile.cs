@@ -58,16 +58,6 @@ namespace Activity4
             Application.Exit();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void firstname_textbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private bool allFilled()
         {
             // Check if all required fields are filled
@@ -176,6 +166,22 @@ namespace Activity4
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Reports_label_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ReportGeneratorInventory frm = new ReportGeneratorInventory();
+            frm.ShowDialog();
+            this.Close();
+        }
+
+        private void About_label_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutProgram frm = new AboutProgram();
+            frm.ShowDialog();
+            this.Close();
         }
     }
 }

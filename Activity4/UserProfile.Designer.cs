@@ -319,6 +319,7 @@
             this.About_label.Size = new System.Drawing.Size(42, 13);
             this.About_label.TabIndex = 61;
             this.About_label.Text = "ABOUT";
+            this.About_label.Click += new System.EventHandler(this.About_label_Click);
             // 
             // LogOut
             // 
@@ -353,11 +354,12 @@
             this.Reports_label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reports_label.Font = new System.Drawing.Font("Glacial Indifference", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reports_label.ForeColor = System.Drawing.Color.White;
-            this.Reports_label.Location = new System.Drawing.Point(39, 202);
+            this.Reports_label.Location = new System.Drawing.Point(38, 202);
             this.Reports_label.Name = "Reports_label";
             this.Reports_label.Size = new System.Drawing.Size(52, 13);
             this.Reports_label.TabIndex = 60;
             this.Reports_label.Text = "REPORTS\r\n";
+            this.Reports_label.Click += new System.EventHandler(this.Reports_label_Click);
             // 
             // label10
             // 
