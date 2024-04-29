@@ -12,6 +12,7 @@ namespace Activity4
 {
     public partial class UserProfile : Form
     {
+        // Use public MySQL connection
         private Connection myConnection;
 
         public UserProfile()
@@ -56,16 +57,6 @@ namespace Activity4
             AccountStatus acc_status = new AccountStatus(myConnection);
             acc_status.InactiveStatus();
             Application.Exit();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void firstname_textbox_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private bool allFilled()
@@ -176,6 +167,22 @@ namespace Activity4
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Reports_label_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ReportGeneratorInventory frm = new ReportGeneratorInventory();
+            frm.ShowDialog();
+            this.Close();
+        }
+
+        private void About_label_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutProgram frm = new AboutProgram();
+            frm.ShowDialog();
+            this.Close();
         }
     }
 }

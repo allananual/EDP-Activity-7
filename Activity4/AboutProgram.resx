@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="guna2CustomGradientPanel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="label1.Text" xml:space="preserve">
     <value>Welcome to SIM Supermarket, where shopping meets simplicity and savings! 
 
@@ -1546,10 +1543,16 @@ With convenient checkout options and regular promotions, SIM Supermarket is your
         AAAAAAAAAAAAwK/bf/zH/wP3sSzAD61RqwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <metadata name="guna2CustomGradientPanel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="windows.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="user_icon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAO9JREFUSEvt1EFqwlAUheEswHmtUCfSQXdScVJ3Em331MUUNxFdQ+0snpf3J1jO
+        DAAACwwBP0AiyAAAAO9JREFUSEvt1EFqwlAUheEswHmtUCfSQXdScVJ3Em331MUUNxFdQ+0snpf3J1jO
         lWofzvLBAbnn5gYUrEY3adt2pRyU/9orS845Fko1nHMsFOOco48clVqZKo/KhlmIc44+UrMy0GybK8eK
         o49MWRlo9pArx4qjj0QvmOXKseLoI1tWBpp95Mqx4ugj6QdN33n6gVPelR8lxDlHX4xzjr4Y5xz9uW/l
         U3lTXpQJSZ/XSurSzi+cc/S9L+WJ6iLtzJVdeqBH5eh7C8Z/0u5zfiRj7Og7jK7GYx1Gjr4Y55y6u/9d
@@ -1559,7 +1562,7 @@ With convenient checkout options and regular promotions, SIM Supermarket is your
   <data name="LogOutButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAdBJREFUaEPtmTFOwzAYhXsBDgAMTJyAAc7B1MZOkXo6GDgCTGxJ4AScoAK17Ajs
+        DAAACwwBP0AiyAAAAdBJREFUaEPtmTFOwzAYhXsBDgAMTJyAAc7B1MZOkXo6GDgCTGxJ4AScoAK17Ajs
         8oLKn/zqc6wkRPInvcX1++wg01rtLJFIJP4vz4vFeWHsfWnsR2nzr0Hj1ixsfveyXJ5iO2H4zZfWvrXK
         h82600Ps/vLtwsFTWHuLbfGMcmz0bLAtHinBcDTSywZ1nmiBgvSyQZ0nWqAgvWxQ54kWKEgvG9R5ogUK
         0ssGdZ5ogYL0skGdJ1qgIL1sUOfpIiiNOa7y/PpptTrCUAPpZYM6T6jAXTsu3bzNz3z7iOEG+86QoM4T
@@ -1570,26 +1573,6 @@ With convenient checkout options and regular promotions, SIM Supermarket is your
         sHr2gheiAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAdBJREFUaEPtmTFOwzAYhXsBDgAMTJyAAc7B1MZOkXo6GDgCTGxJ4AScoAK17Ajs
-        8oLKn/zqc6wkRPInvcX1++wg01rtLJFIJP4vz4vFeWHsfWnsR2nzr0Hj1ixsfveyXJ5iO2H4zZfWvrXK
-        h82600Ps/vLtwsFTWHuLbfGMcmz0bLAtHinBcDTSywZ1nmiBgvSyQZ0nWqAgvWxQ54kWKEgvG9R5ogUK
-        0ssGdZ5ogYL0skGdJ1qgIL1sUOfpIiiNOa7y/PpptTrCUAPpZYM6T6jAXTsu3bzNz3z7iOEG+86QoM4T
-        Ivi7effRb+wnXmpQzwkN6jysoMpuLtyt8Z2dL+exQZ2HEWib1+Z72uYyQZ3nkEAem76DZXkOCdzYq5zT
-        Z7AszyGBG5v6A+yO0FbO6ytYlocRTPqfuGbSb6M17gpx5eb8HqdJfZDV4CF2b6uFyR8w3GDfGRLUeboI
-        qiw7K4xZTPIyxyK9bFDniRYoSC8b1HmiBQrSywZ1nmiBgvSyQZ0nWqAgvWxQ54kWKEgvG9R5ogUK0ssG
-        dR5XGuyiRiT8y13/40KLaJR0+nrd/6jgymspGyHraj4/wbbC8EX/9E4yxnHa+rU7bz6RSCQGYDb7BuWg
-        sHr2gheiAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="guna2CustomGradientPanel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="windows.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="windows.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

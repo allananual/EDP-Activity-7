@@ -31,23 +31,21 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutProgram));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.About_label = new System.Windows.Forms.Label();
+            this.Reports_label = new System.Windows.Forms.Label();
+            this.Accounts_label = new System.Windows.Forms.Label();
+            this.Dashboard_label = new System.Windows.Forms.Label();
+            this.LogOut = new System.Windows.Forms.Label();
+            this.user_label = new System.Windows.Forms.Label();
+            this.user_icon = new System.Windows.Forms.PictureBox();
+            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.label12 = new System.Windows.Forms.Label();
+            this.LogOutButton = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LoginButton = new FontAwesome.Sharp.IconButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.label8 = new System.Windows.Forms.Label();
-            this.LogOutButton = new System.Windows.Forms.PictureBox();
-            this.LogOut = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.windows = new System.Windows.Forms.PictureBox();
@@ -58,12 +56,10 @@
             this.guna2ContextMenuStrip2 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.exitButton = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.windows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -72,11 +68,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.LoginButton);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.guna2CustomGradientPanel1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -85,6 +81,163 @@
             this.panel1.Size = new System.Drawing.Size(698, 390);
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.panel4.Controls.Add(this.About_label);
+            this.panel4.Controls.Add(this.Reports_label);
+            this.panel4.Controls.Add(this.Accounts_label);
+            this.panel4.Controls.Add(this.Dashboard_label);
+            this.panel4.Controls.Add(this.LogOut);
+            this.panel4.Controls.Add(this.user_label);
+            this.panel4.Controls.Add(this.user_icon);
+            this.panel4.Controls.Add(this.guna2Shapes1);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.LogOutButton);
+            this.panel4.Location = new System.Drawing.Point(0, 14);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(125, 376);
+            this.panel4.TabIndex = 24;
+            // 
+            // About_label
+            // 
+            this.About_label.AutoSize = true;
+            this.About_label.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.About_label.Font = new System.Drawing.Font("Glacial Indifference", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.About_label.ForeColor = System.Drawing.Color.SeaGreen;
+            this.About_label.Location = new System.Drawing.Point(44, 241);
+            this.About_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.About_label.Name = "About_label";
+            this.About_label.Size = new System.Drawing.Size(42, 13);
+            this.About_label.TabIndex = 54;
+            this.About_label.Text = "ABOUT";
+            // 
+            // Reports_label
+            // 
+            this.Reports_label.AutoSize = true;
+            this.Reports_label.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Reports_label.Font = new System.Drawing.Font("Glacial Indifference", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reports_label.ForeColor = System.Drawing.Color.White;
+            this.Reports_label.Location = new System.Drawing.Point(38, 202);
+            this.Reports_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Reports_label.Name = "Reports_label";
+            this.Reports_label.Size = new System.Drawing.Size(52, 13);
+            this.Reports_label.TabIndex = 53;
+            this.Reports_label.Text = "REPORTS\r\n";
+            this.Reports_label.Click += new System.EventHandler(this.Reports_label_Click);
+            // 
+            // Accounts_label
+            // 
+            this.Accounts_label.AutoSize = true;
+            this.Accounts_label.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Accounts_label.Font = new System.Drawing.Font("Glacial Indifference", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Accounts_label.ForeColor = System.Drawing.Color.White;
+            this.Accounts_label.Location = new System.Drawing.Point(30, 163);
+            this.Accounts_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Accounts_label.Name = "Accounts_label";
+            this.Accounts_label.Size = new System.Drawing.Size(66, 13);
+            this.Accounts_label.TabIndex = 52;
+            this.Accounts_label.Text = "ACCOUNTS\r\n";
+            this.Accounts_label.Click += new System.EventHandler(this.Accounts_label_Click);
+            // 
+            // Dashboard_label
+            // 
+            this.Dashboard_label.AutoSize = true;
+            this.Dashboard_label.Font = new System.Drawing.Font("Glacial Indifference", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dashboard_label.ForeColor = System.Drawing.Color.White;
+            this.Dashboard_label.Location = new System.Drawing.Point(28, 123);
+            this.Dashboard_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Dashboard_label.Name = "Dashboard_label";
+            this.Dashboard_label.Size = new System.Drawing.Size(71, 13);
+            this.Dashboard_label.TabIndex = 51;
+            this.Dashboard_label.Text = "DASHBOARD";
+            this.Dashboard_label.Click += new System.EventHandler(this.Dashboard_label_Click);
+            // 
+            // LogOut
+            // 
+            this.LogOut.AutoSize = true;
+            this.LogOut.BackColor = System.Drawing.Color.Transparent;
+            this.LogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogOut.Font = new System.Drawing.Font("Glacial Indifference", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogOut.ForeColor = System.Drawing.Color.IndianRed;
+            this.LogOut.Location = new System.Drawing.Point(43, 321);
+            this.LogOut.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LogOut.Name = "LogOut";
+            this.LogOut.Size = new System.Drawing.Size(52, 13);
+            this.LogOut.TabIndex = 31;
+            this.LogOut.Text = "LOG OUT";
+            this.LogOut.Click += new System.EventHandler(this.LogOut_Click);
+            // 
+            // user_label
+            // 
+            this.user_label.AutoSize = true;
+            this.user_label.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.user_label.Font = new System.Drawing.Font("Poppins", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_label.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.user_label.Location = new System.Drawing.Point(43, 57);
+            this.user_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.user_label.Name = "user_label";
+            this.user_label.Size = new System.Drawing.Size(54, 14);
+            this.user_label.TabIndex = 18;
+            this.user_label.Text = "allana_nual";
+            this.user_label.Click += new System.EventHandler(this.user_label_Click);
+            // 
+            // user_icon
+            // 
+            this.user_icon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.user_icon.Image = ((System.Drawing.Image)(resources.GetObject("user_icon.Image")));
+            this.user_icon.InitialImage = null;
+            this.user_icon.Location = new System.Drawing.Point(28, 56);
+            this.user_icon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.user_icon.Name = "user_icon";
+            this.user_icon.Size = new System.Drawing.Size(16, 15);
+            this.user_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.user_icon.TabIndex = 30;
+            this.user_icon.TabStop = false;
+            this.user_icon.Click += new System.EventHandler(this.user_icon_Click);
+            // 
+            // guna2Shapes1
+            // 
+            this.guna2Shapes1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.guna2Shapes1.FillColor = System.Drawing.Color.SeaGreen;
+            this.guna2Shapes1.LineThickness = 1;
+            this.guna2Shapes1.Location = new System.Drawing.Point(5, 40);
+            this.guna2Shapes1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2Shapes1.Name = "guna2Shapes1";
+            this.guna2Shapes1.PolygonSkip = 1;
+            this.guna2Shapes1.Rotate = 0F;
+            this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
+            this.guna2Shapes1.Size = new System.Drawing.Size(115, 15);
+            this.guna2Shapes1.TabIndex = 19;
+            this.guna2Shapes1.Text = "guna2Shapes1";
+            this.guna2Shapes1.Zoom = 80;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("LEMON MILK", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label12.Location = new System.Drawing.Point(2, 13);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(124, 43);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "SIM SUPERMARKET";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LogOutButton
+            // 
+            this.LogOutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogOutButton.Image = ((System.Drawing.Image)(resources.GetObject("LogOutButton.Image")));
+            this.LogOutButton.Location = new System.Drawing.Point(29, 320);
+            this.LogOutButton.Margin = new System.Windows.Forms.Padding(2);
+            this.LogOutButton.Name = "LogOutButton";
+            this.LogOutButton.Size = new System.Drawing.Size(13, 13);
+            this.LogOutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LogOutButton.TabIndex = 21;
+            this.LogOutButton.TabStop = false;
+            this.LogOutButton.Click += new System.EventHandler(this.LogOutButton_Click);
             // 
             // label3
             // 
@@ -110,7 +263,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(472, 78);
+            this.pictureBox1.Location = new System.Drawing.Point(471, 78);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(226, 239);
@@ -137,168 +290,6 @@
             this.LoginButton.TabIndex = 16;
             this.LoginButton.Text = "Read More";
             this.LoginButton.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(0, 14);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(125, 376);
-            this.panel2.TabIndex = 12;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.pictureBox6);
-            this.panel3.Controls.Add(this.guna2Shapes1);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.LogOutButton);
-            this.panel3.Controls.Add(this.LogOut);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(-1, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(125, 376);
-            this.panel3.TabIndex = 22;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Poppins", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label10.Location = new System.Drawing.Point(43, 57);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 14);
-            this.label10.TabIndex = 33;
-            this.label10.Text = "allana_nual";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(27, 56);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(15, 15);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 34;
-            this.pictureBox6.TabStop = false;
-            // 
-            // guna2Shapes1
-            // 
-            this.guna2Shapes1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.guna2Shapes1.FillColor = System.Drawing.Color.SeaGreen;
-            this.guna2Shapes1.LineThickness = 1;
-            this.guna2Shapes1.Location = new System.Drawing.Point(5, 40);
-            this.guna2Shapes1.Name = "guna2Shapes1";
-            this.guna2Shapes1.PolygonSkip = 1;
-            this.guna2Shapes1.Rotate = 0F;
-            this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
-            this.guna2Shapes1.Size = new System.Drawing.Size(115, 15);
-            this.guna2Shapes1.TabIndex = 24;
-            this.guna2Shapes1.Text = "guna2Shapes1";
-            this.guna2Shapes1.Zoom = 80;
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("LEMON MILK", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label8.Location = new System.Drawing.Point(2, 13);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(124, 43);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "SIM SUPERMARKET";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LogOutButton
-            // 
-            this.LogOutButton.Image = ((System.Drawing.Image)(resources.GetObject("LogOutButton.Image")));
-            this.LogOutButton.Location = new System.Drawing.Point(29, 321);
-            this.LogOutButton.Margin = new System.Windows.Forms.Padding(2);
-            this.LogOutButton.Name = "LogOutButton";
-            this.LogOutButton.Size = new System.Drawing.Size(13, 13);
-            this.LogOutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.LogOutButton.TabIndex = 21;
-            this.LogOutButton.TabStop = false;
-            // 
-            // LogOut
-            // 
-            this.LogOut.Font = new System.Drawing.Font("Glacial Indifference", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogOut.ForeColor = System.Drawing.Color.IndianRed;
-            this.LogOut.Location = new System.Drawing.Point(14, 280);
-            this.LogOut.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LogOut.Name = "LogOut";
-            this.LogOut.Size = new System.Drawing.Size(112, 95);
-            this.LogOut.TabIndex = 20;
-            this.LogOut.Text = "LOG OUT";
-            this.LogOut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LogOut.Click += new System.EventHandler(this.LogOut_Click);
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Glacial Indifference", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label9.Location = new System.Drawing.Point(1, 188);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 26);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "\r\nABOUT\r\n";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Glacial Indifference", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(3, 67);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 203);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "DASHBOARD\r\n\r\n\r\nREPORTS\r\n\r\n\r\nABOUT";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(29, 321);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(13, 13);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Glacial Indifference", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.IndianRed;
-            this.label5.Location = new System.Drawing.Point(14, 280);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 95);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "LOG OUT";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Glacial Indifference", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(2, 57);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 203);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "DASHBOARD\r\n\r\n\r\nREPORTS\r\n\r\n\r\nABOUT";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -410,13 +401,11 @@
             this.Text = "AboutProgram";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.windows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
@@ -429,7 +418,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton LoginButton;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.PictureBox windows;
@@ -440,18 +428,17 @@
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox LogOutButton;
-        private System.Windows.Forms.Label LogOut;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox exitButton;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label About_label;
+        private System.Windows.Forms.Label Reports_label;
+        private System.Windows.Forms.Label Accounts_label;
+        private System.Windows.Forms.Label Dashboard_label;
+        private System.Windows.Forms.Label LogOut;
+        private System.Windows.Forms.Label user_label;
+        private System.Windows.Forms.PictureBox user_icon;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox LogOutButton;
     }
 }
