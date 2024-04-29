@@ -12,6 +12,7 @@ namespace Activity4
 {
     public partial class UserProfile : Form
     {
+        // Use public MySQL connection
         private Connection myConnection;
 
         public UserProfile()

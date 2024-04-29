@@ -13,7 +13,7 @@ namespace Activity4
 {
     public partial class AboutProgram : Form
     {
-        // Use public MySQL connection
+        // Use public MySQL connection  
         public Connection myConnection;
 
         public AboutProgram()
